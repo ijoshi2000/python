@@ -3,7 +3,7 @@ import random
 def coupon_creator(digit):
     coupon=''
     for word in range(digit):
-        coupon+=random.choice(string.ascii_uppercase + string.digits)
+        coupon=coupon+random.choice(string.ascii_uppercase + string.digits)
     return coupon
     
 def two_hundred_coupons():
@@ -12,7 +12,7 @@ def two_hundred_coupons():
     for count in range(200):
         digit=12
         count+=1
-        data+='coupon no.'+str(count)+'  '+coupon_creator(digit)+'\n'
+        data=data+'coupon no.'+str(count)+'  '+coupon_creator(digit)+'\n'
 
     return data
 
